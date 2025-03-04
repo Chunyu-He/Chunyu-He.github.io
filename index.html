@@ -25,18 +25,55 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="assets/css/academicons.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 手风琴容器样式 */
+        .accordion {
+            display: flex;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        /* 每个图片项的样式 */
+        .accordion-item {
+            flex: 1;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: flex 0.5s ease;
+            cursor: pointer;
+        }
+
+        /* 鼠标悬停时放大图片 */
+        .accordion-item:hover {
+            flex: 3;
+        }
+    </style>
 </head>
 
 <body>
-    <div style="background-image: url('images/top_no_text.png'); background-size: 100% 100%; height:200px; border=20px; min-width: 760px;"
+     <!-- 手风琴容器 -->
+     <div class="accordion">
+        <!-- 图片项 1 -->
+        <div class="accordion-item" style="background-image: url('images/1.jpg')"></div>
+        <!-- 图片项 2 -->
+        <div class="accordion-item" style="background-image: url('images/2.jpg')"></div>
+        <!-- 图片项 3 -->
+        <div class="accordion-item" style="background-image: url('images/3.jpg')"></div>
+        
+    </div>
+
+    <div style="background-image: url('images/top_no_text.png'); background-size: 100% 100%; height:200px; border:20px; min-width: 760px;"
         class="center">
         <div style="background-color: rgba(256,256,256,0.6); width: 100%; height: 100%; min-width: 760px;">
             <div style="width: 96%; height: 96%; margin: 2%; min-width: 760px" class="center">
-                <p style="color:rgb(73, 78, 82); font-size: 28px; margin: 0px;"><b>DeeperAction@ ECCV2022</b></p>
-                <p style="color:rgb(73, 78, 82); font-size: 32px; text-align:center; margin: 0px;"><b>The Second Challenge and
-                        Workshop on <br>Detailed Video Action Understanding and Anomaly Recognition</b></p>
-                <p style="color:rgb(73, 78, 82); font-size: 28px; margin: 0px; text-align: right;"><b>Monday 24th
-                        October 2022</b></p>
+                <p style="color:rgb(5, 32, 55); font-size: 32px; margin: 0px; text-align: center;"><b>Spike Dataset Family</b></p>
+                <!-- 修改此处，增加底部外边距 -->
+                <p style="color:rgb(49, 5, 56); font-size: 20px; margin: 40px 0px 0px 0px; text-align: center;"><b>School of Computer Science, Peking University</b></p>
+                <p style="color:rgb(49, 5, 56); font-size: 20px; margin: 0px; text-align: center;"><b>State Key Laboratory for Multimedia Information Processing, Peking University</b></p>
             </div>
         </div>
     </div>
@@ -71,10 +108,8 @@
                             <div class="dropdown"> <span><a href="index.html">Datasets</a></span>
                                 <div class="dropdown-content">
                                     <p><a href="datasets/fineaction.html">FineAction</a></p>
-                                    <p><a href="datasets/multisports.html">MultiSports</a></p>
-                                    <p><a href="datasets/sportsmot.html">SportsMOT</a></p>
-                                    <p><a href="datasets/kineticstps.html">Kinetics-TPS</a></p>
-                                    <p><a href="datasets/urbanpipe.html">UrbanPipe</a></p>
+                                    <!-- <p><a href="datasets/multisports.html">MultiSports</a></p> -->
+                                     <!-- 这里是下拉菜单位置，未来有多少数据集就可以采用这种下拉菜单的设置 -->
                                 </div>
                             </div>
                         </li>
