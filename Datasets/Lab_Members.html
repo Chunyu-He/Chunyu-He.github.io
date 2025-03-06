@@ -22,22 +22,16 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
     <meta http-equiv="cleartype" content="on" />
     <link
-      rel="icon"
-      type="image/png"
-      href="../images/favicon-32x32.png"
-      sizes="32x32"
+            href="../images/favicon32.png"
+            rel="icon"
+            sizes="32x32"
+            type="image/png"
     />
     <link
-      rel="icon"
-      type="image/png"
-      href="../images/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="../images/favicon-16x16.png"
-      sizes="16x16"
+            href="../images/favicon64.png"
+            rel="icon"
+            sizes="64x64"
+            type="image/png"
     />
     <link rel="shortcut icon" href="../images/favicon.ico" />
     <meta name="msapplication-TileColor" content="#000000" />
@@ -45,31 +39,6 @@
     <link rel="stylesheet" href="../assets/css/academicons.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      /* 手风琴容器样式 */
-      .accordion {
-        display: flex;
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-        perspective: 1000px; /* 添加透视效果 */
-      }
-      .accordion-item {
-        flex: 1;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        transition: flex 0.5s ease, transform 0.5s ease; /* 添加 transform 过渡效果 */
-        cursor: pointer;
-        transform-style: preserve-3d; /* 保持 3D 变换 */
-      }
-
-      /* 鼠标悬停时放大图片并添加 3D 旋转效果 */
-      .accordion-item:hover {
-        flex: 3;
-        transform: rotateY(10deg); /* 添加 3D 旋转效果 */
-      }
-    </style>
   </head>
   <style>
     /* 返回顶部按钮样式 */
@@ -244,6 +213,9 @@
                     <!-- 这里是下拉菜单位置，未来有多少数据集就可以采用这种下拉菜单的设置 -->
                   </div>
                 </div>
+              </li>
+              <li class="masthead__menu-item">
+                <a href="../Datasets/Articles.html">Articles</a>
               </li>
               <li class="masthead__menu-item">
                 <a href="https://github.com/chenkang455/Spike-Zoo">Spikezoo</a>
